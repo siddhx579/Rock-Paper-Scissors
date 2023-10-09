@@ -11,7 +11,6 @@ public class RockPaperScissorGUI extends JFrame implements ActionListener{
     //will display the choice of the computer
     JLabel computerChoice;
 
-
     //will display the score of the computer and the player
     JLabel computerScoreLabel, playerScoreLabel;
 
