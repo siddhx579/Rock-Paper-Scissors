@@ -30,6 +30,10 @@ public class RockPaperScissorGUI extends JFrame implements ActionListener{
         //terminate the java virtual machine when closing the GUI
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        //set the color of the application window
+        Container contentPane = getContentPane();
+        contentPane.setBackground(Color.decode("#F6F4C3"));
+
         //load GUI in the center of the screen every time we run the application
         setLocationRelativeTo(null);
 
@@ -79,6 +83,7 @@ public class RockPaperScissorGUI extends JFrame implements ActionListener{
         rockButton = new JButton("Rock");
         rockButton.setBounds(40, 387, 105, 81);
         rockButton.setFont(new Font("Dialog", Font.PLAIN, 18));
+        rockButton.setBackground(Color.decode("#B4DAA7"));
         rockButton.addActionListener(this);
         add(rockButton);
 
@@ -86,6 +91,7 @@ public class RockPaperScissorGUI extends JFrame implements ActionListener{
         paperButton = new JButton("Paper");
         paperButton.setBounds(165, 387, 105, 81);
         paperButton.setFont(new Font("Dialog", Font.PLAIN, 18));
+        paperButton.setBackground(Color.decode("#B4DAA7"));
         paperButton.addActionListener(this);
         add(paperButton);
 
@@ -93,6 +99,7 @@ public class RockPaperScissorGUI extends JFrame implements ActionListener{
         scissorButton = new JButton("Scissors");
         scissorButton.setBounds(290, 387, 105, 81);
         scissorButton.setFont(new Font("Dialog", Font.PLAIN, 18));
+        scissorButton.setBackground(Color.decode("#B4DAA7"));
         scissorButton.addActionListener(this);
         add(scissorButton);
     }
